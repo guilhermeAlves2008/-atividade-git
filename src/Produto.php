@@ -1,15 +1,18 @@
 <?php
 
-class Funcionario
+class Produto
 {
-    private $nome;
-    private $matricula;
-    private $cargo;
+    private $descricao;
+    private $preco;
 
-    public function __construct($nome, $matricula, $cargo)
+    public function __construct($descricao, $preco)
     {
-        $this->nome = $nome;
-        $this->matricula = $matricula;
-        $this->cargo = $cargo;
+        $this->descricao = $descricao;
+        $this->preco = $preco;
+    }
+
+    public function exibirProduto()
+    {
+        return $this->descricao . " - R$ " . $this->preco;
     }
 }

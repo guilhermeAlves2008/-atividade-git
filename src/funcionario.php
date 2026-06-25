@@ -10,4 +10,11 @@ class Funcionario
         $this->nome = $nome;
         $this->matricula = $matricula;
     }
+    private $cargo;
+private $salario;
+
+public function exibirDados()
+{
+    return $this->nome . " - " . $this->cargo;
+}
 }
